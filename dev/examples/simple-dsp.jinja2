@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<DescriptionSetTemplate xmlns="http://dublincore.org/xml/dc-dsp/2008/03/31">
+
+{% for key, description in dsp.descriptions.items() %}
+  <DescriptionTemplate>
+	{% for key, statement in description.statements.items() %}
+    <StatementTemplate>
+      <Property>{{ statement.property }}</Property>
+    </StatementTemplate>
+    {% endfor %}
+  </DescriptionTemplate>
+{% endfor %}
+</DescriptionSetTemplate>

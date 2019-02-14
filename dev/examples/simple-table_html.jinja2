@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ dsp.title }}</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+</head>
+<body>
+
+<div class="container">
+
+	
+
+<h1>{{ dsp.title }}</h1>
+<h3>Version {{ dsp.version }}</h3>
+<h3>{{ dsp.creator }}</h3>
+<hr>
+
+
+{% for key, description in dsp.descriptions.items() %}
+<h4>{{ key }}</h4>
+<div class="row">
+  <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Min</th>
+      <th>Max</th>
+      <th>Type</th>
+      <th>Property</th>
+    </tr>
+  </thead>
+  <tbody>
+	{% for key, statement in description.statements.items() %}
+     <tr>
+      <td>{{ key }}</td>
+      <td>{{ statement.min }}</td>
+      <td>{{ statement.max }}</td>
+      <td>{{ statement.type }}</td>
+      <td>{{ statement.property }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endfor %}	
+
+</div>
+	
+</body>
+</html>

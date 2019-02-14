@@ -1,0 +1,102 @@
+---
+type : dsp # Multiple types of YAML input is possible. eg : dsp, patch, matrix etc
+
+description_set :
+
+  id               :  MyBookCase        
+  title            :  My Book Case Example DSP        
+  version          :  0.1.0         
+  date             :  2018-07-22
+  subject          :  Example
+  creator          :  creator@example.com
+  open             :  true
+  license          :  https://opendefinition.org/licenses/gfdl/
+  descriptions     :  [Book, Person]
+
+namespaces     :
+  dcterms        :  http://purl.org/dc/terms/
+  foaf           :  http://xmlns.com/foaf/0.1/
+
+descriptions   :
+  -
+    id             : Book
+    min            : 1
+    max            : 1
+    standalone     : true
+    statements     : [title, dateCreated, language, subject, author]
+  - 
+    id             : Person
+    min            : 0
+    max            : unlimited
+    standalone     : no
+    statements     : [givenName, familyName, email]
+
+    # - [Person, 0, unlimited, no, [givenname, familyName, email]] 
+
+statements     :
+  -
+    id             : title 
+    min            : 1 
+    max            : 1 
+    type           : literal
+    property       : dcterms:title
+  -
+    id             : dateCreated
+    min            : 0
+    max            : 1 
+    type           : literal
+    property       : dcterms:created
+    constraint     : 
+      SyntaxEncodingScheme : http://purl.org/dc/terms/W3CDTF
+  -   
+    ID             : language
+    min            : 0
+    max            : 3 
+    type           : nonliteral
+    property       : dcterms:language
+    constraint     :  
+      VocabularyEncodingSchemeURI : http://purl.org/dc/terms/ISO639-3
+      ValueStringConstraint :  
+        min            : 1 
+        max            : 1 
+  - 
+    ID             : subject
+    minOccurs      : 0
+    maxOccurs      : unlimited 
+    type           : nonliteral
+    Property       : dcterms:LCSH
+    NonLiteralConstraint     :  
+      VocabularyEncodingSchemeURI : http://lcsh.info
+      ValueStringConstraint :  
+        minOccurs      : 1 
+        maxOccurs      : 1 
+  - 
+    ID             : author
+    minOccurs      : 0
+    maxOccurs      : 5 
+    type           : nonliteral
+    Property       : dcterms:creator
+    constraint     :  
+      descriptionTemplateRef : Person
+  -
+    ID             : givenName
+    minOccurs      : 0
+    maxOccurs      : 1 
+    type           : literal
+    Property       : foaf:givenname
+  -
+    ID             : familyName
+    minOccurs      : 0
+    maxOccurs      : 1 
+    type           : literal
+    Property       : foaf:family_name
+  -
+    ID             : email
+    min            : 0
+    max            : 1 
+    type           : nonliteral
+    Property       : foaf:mbox
+    constraint     : 
+      ValueURIOccurrence : mandatory
+
+...

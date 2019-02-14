@@ -1,0 +1,86 @@
+%YAML 1.2
+---
+YAMA : 1.0
+
+description_set :
+
+  ID               :  MyBookCase        
+  title            :  My Book Case Example DSP        
+  version          :  0.1.0         
+  date             :  2019-01-21
+  subject          :  Example
+  creator          :  creator@example.com
+  open             :  true
+  license          :  https://opendefinition.org/licenses/gfdl/
+  descriptions     :  [Book, Person]
+
+namespaces :
+  dcterms        :  http://purl.org/dc/terms/
+  foaf           :  http://xmlns.com/foaf/0.1/
+
+descriptions :
+
+  Book:
+    min            : 1
+    max            : 1
+    standalone     : yes
+    statements     : [title, dateCreated, language, subject, author]
+
+  Person:
+    min            : 0
+    max            : unlimited
+    standalone     : no
+    statements     : [givenName, familyName, email]
+
+
+statements :
+
+  title :
+    min      : 1 
+    max      : 1 
+    type     : literal
+    property : dcterms:title
+
+  dateCreated :
+    min      : 0
+    max      : 1 
+    type     : literal
+    property : dcterms:created
+
+  language :
+    min      : 0
+    max      : 3 
+    type     : nonliteral
+    property : dcterms:language
+
+  subject :
+    min      : 0
+    max      : unlimited 
+    type     : nonliteral
+    property : dcterms:LCSH
+
+  author :
+    min      : 0
+    max      : 5 
+    type     : nonliteral
+    property : dcterms:creator
+
+  givenName :
+    min      : 0
+    max      : 1 
+    type     : literal
+    property : foaf:givenname
+  
+  familyName :
+    min      : 0
+    max      : 1 
+    type     : literal
+    property : foaf:family_name
+  
+  email :
+    min      : 0
+    max      : 1 
+    type     : nonliteral
+    property : foaf:mbox
+
+...

@@ -1,0 +1,8 @@
+cerberus
+ruamel.yaml
+Jinja2
+dictdiffer
+deepdiff
+jsonpatch
+click
+pykwalify[ruamel]
