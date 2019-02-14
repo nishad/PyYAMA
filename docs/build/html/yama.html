@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>yama package &mdash; YAMA 0.1.3.alpha1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> YAMA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">yama package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-yama.core">yama.core module</a></li>
+<li><a class="reference internal" href="#module-yama.helpers">yama.helpers module</a></li>
+<li><a class="reference internal" href="#module-yama">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">YAMA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>yama package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/yama.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="yama-package">
+<h1>yama package<a class="headerlink" href="#yama-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-yama.core">
+<span id="yama-core-module"></span><h2>yama.core module<a class="headerlink" href="#module-yama.core" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="yama.core.YAMA">
+<em class="property">class </em><code class="descclassname">yama.core.</code><code class="descname">YAMA</code><span class="sig-paren">(</span><em>yama_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#YAMA"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.YAMA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>YAMA Core class.</p>
+<p><cite>YAMA</cite> call is used to handle YAMA docuemnts through a
+YAMA object. This object can be hadled Application Profiles
+programatically.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>yama_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Accessible location of a YAMA file, this YAMA docuemnt</li>
+<li><strong>be parsed and the Application Profile object will be returend.</strong> (<em>will</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Extandable Application Profile object is
+returned.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#yama.core.YAMA" title="yama.core.YAMA">YAMA</a> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)">object</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="yama.core.YAMA.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>template_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#YAMA.render"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.YAMA.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>A renderer for Application Profile Object, which will render
+any given template to specific output.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">At this stage of development, only Jinja2 templates are
+supported.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>template_file</strong> – Location of the template file.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A rendered output of the DSP using provided template.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="yama.core.YAMA.version">
+<code class="descname">version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#YAMA.version"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.YAMA.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access the version number of DSP, if the version is declared
+in the YAMA docuemnt.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This methode will be expanded to deal with automatic
+versioning.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Version of the Application Profile declared in the
+YAMA docuemnt.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="yama.core.expand_namespace">
+<code class="descclassname">yama.core.</code><code class="descname">expand_namespace</code><span class="sig-paren">(</span><em>namespaces</em>, <em>description_property</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#expand_namespace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.expand_namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to expand namespaces</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>namespaces</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – namespaces dictionary</li>
+<li><strong>description_property</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Exapanded namespace for property.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns an expanded property string with URI.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">uri+property(<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)">str</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="yama.core.generate_description_set">
+<code class="descclassname">yama.core.</code><code class="descname">generate_description_set</code><span class="sig-paren">(</span><em>description_set</em>, <em>descriptions_dictionary</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#generate_description_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.generate_description_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate description set</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>descriptions_set</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of description set</li>
+<li><strong>descriptions_dictionary</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of descriptions.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Updated description set dictionary.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">descriptionset(<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="yama.core.generate_descriptions">
+<code class="descclassname">yama.core.</code><code class="descname">generate_descriptions</code><span class="sig-paren">(</span><em>descriptions_dictionary</em>, <em>statements_dictionary</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#generate_descriptions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.generate_descriptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate description</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>descriptions_dictionary</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of statements</li>
+<li><strong>statements_dictionary</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of statements.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Updated descriptions dictionary.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">descriptions (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="yama.core.generate_statements">
+<code class="descclassname">yama.core.</code><code class="descname">generate_statements</code><span class="sig-paren">(</span><em>statements_dictionary</em>, <em>namespaces</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/core.html#generate_statements"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.core.generate_statements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to generate statements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>namespaces</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – namespaces dictionary</li>
+<li><strong>statements_dictionary</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of statements.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Updated statements dictionary.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">statemets(<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-yama.helpers">
+<span id="yama-helpers-module"></span><h2>yama.helpers module<a class="headerlink" href="#module-yama.helpers" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="yama.helpers.DefaultOrderedDict">
+<em class="property">class </em><code class="descclassname">yama.helpers.</code><code class="descname">DefaultOrderedDict</code><span class="sig-paren">(</span><em>default_factory=None</em>, <em>*a</em>, <em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/yama/helpers.html#DefaultOrderedDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.helpers.DefaultOrderedDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/collections.html#collections.OrderedDict" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.OrderedDict</span></code></a></p>
+<dl class="method">
+<dt id="yama.helpers.DefaultOrderedDict.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; a shallow copy of od<a class="reference internal" href="_modules/yama/helpers.html#DefaultOrderedDict.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#yama.helpers.DefaultOrderedDict.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-yama">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-yama" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, YAMA Project
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

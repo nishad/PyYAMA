@@ -1,0 +1,10 @@
+yama.cli package
+===============
+
+Module contents
+---------------
+
+.. automodule:: yama.cli
+    :members:
+    :undoc-members:
+    :show-inheritance:
